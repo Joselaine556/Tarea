@@ -8,9 +8,11 @@ f.close()
 
 df = pd.DataFrame(data)
 
+#Resumen del dataset
 print("Número de registros:", len(df))
 print("Columnas:", df.columns)
 print("\nPrimer registro:")
 print(data[0])
 
 print(df.head())
+

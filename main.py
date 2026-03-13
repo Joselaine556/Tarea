@@ -46,10 +46,11 @@ plt.tight_layout()
 plt.savefig("Visualizaciones/sepal_promedio.png")
 plt.clf()
 
-sns.boxplot(x="variety", y="petal.length", data=df)
+#Relación entre largo y ancho del sépalo por especie
+sns.scatterplot(x="sepal.length", y="sepal.width", hue="variety", data=df)
 
-plt.title("Longitud de pétalos por especie")
-plt.xticks(rotation=45)
+plt.title("Relación entre largo y ancho del sépalo")
 plt.tight_layout()
-plt.savefig("Visualizaciones/petal_boxplot.png")
+
+plt.savefig("Visualizaciones/sepal_scatter.png")
 plt.clf()

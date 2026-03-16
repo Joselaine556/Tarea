@@ -62,7 +62,7 @@ reporte = f"""
 
 ![Promedio de pétalos](Visualizaciones/petal_promedio.png)
 
-Este gráfico muestra el promedio de la longitud de los pétalos para cada especie.
+Este gráfico muestra el promedio de la longitud de los pétalos para cada especie de flor.
 
 ---
 

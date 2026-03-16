@@ -1,6 +1,11 @@
 
 # Reporte de análisis del dataset Iris
 
+## ¿Qué información útil nos dan los datos?
+Los datos permiten ver las diferencias entre las especies de flores Iris a partir de las medidas de sus pétalos y sépalos. 
+Con los gráficos y las estadísticas se puede observar que algunas especies tienen pétalos más largos o más anchos que otras. 
+Esto ayuda a comparar las especies y entender mejor sus características.
+
 ## Promedio de longitud de pétalos por especie
 
 ![Promedio de pétalos](Visualizaciones/petal_promedio.png)

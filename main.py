@@ -82,5 +82,10 @@ En este gráfico se observa la relación entre el largo y el ancho del sépalo. 
 
 
 ## Conclusión
-
+En general, se pueden notar diferencias entre las especies de Iris en el tamaño de sus pétalos y sépalos. 
+Estas medidas ayudan a distinguir cada tipo de flor.
 """
+with open("reporte.md", "w", encoding="utf-8") as f:
+    f.write(reporte)
+
+print("Reporte generado")

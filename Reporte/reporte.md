@@ -8,7 +8,7 @@ Esto ayuda a comparar las especies y entender mejor sus características.
 
 ## Promedio de longitud de pétalos por especie
 
-![Promedio de pétalos](Visualizaciones/petal_promedio.png)
+![Promedio de pétalos](../Visualizaciones/petal_promedio.png)
 
 Este gráfico muestra el promedio de la longitud de los pétalos para cada especie de flor.
 
@@ -16,7 +16,7 @@ Este gráfico muestra el promedio de la longitud de los pétalos para cada espec
 
 ## Promedio del largo del sépalo por especie
 
-![Promedio del sépalo](Visualizaciones/sepal_promedio.png)
+![Promedio del sépalo](../Visualizaciones/sepal_promedio.png)
 
 Aquí se puede ver que el tamaño del sépalo también cambia dependiendo de la especie.
 
@@ -24,7 +24,7 @@ Aquí se puede ver que el tamaño del sépalo también cambia dependiendo de la 
 
 ## Relación entre largo y ancho del sépalo por especie
 
-![Relación del sépalo](Visualizaciones/sepal_scatter.png)
+![Relación del sépalo](../Visualizaciones/sepal_scatter.png)
 
 En este gráfico se observa la relación entre el largo y el ancho del sépalo. Los puntos están coloreados por especie, lo que permite ver cómo se agrupan las flores.
 

@@ -54,3 +54,29 @@ plt.tight_layout()
 
 plt.savefig("Visualizaciones/sepal_scatter.png")
 plt.clf()
+
+reporte = f"""
+# Reporte de análisis del dataset Iris
+
+## Promedio de longitud de pétalos por especie
+
+![Promedio de pétalos](Visualizaciones/petal_promedio.png)
+
+Este gráfico muestra el promedio de la longitud de los pétalos para cada especie.
+
+---
+
+## Promedio del largo del sépalo por especie
+
+![Promedio del sépalo](Visualizaciones/sepal_promedio.png)
+
+Aquí se puede ver cómo cambia el tamaño del sépalo dependiendo de la especie.
+
+---
+
+## Relación entre largo y ancho del sépalo por especie
+
+![Relación del sépalo](Visualizaciones/sepal_scatter.png)
+
+Este gráfico muestra la relación entre el largo y el ancho del sépalo y permite observar cómo se distribuyen las especies.
+"""

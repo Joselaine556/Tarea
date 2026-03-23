@@ -5,7 +5,7 @@ En total hay **150 registros**.
 
 ---
 
-## 📊 Estadísticas por especie  
+##  Estadísticas por especie  
 
 | variety    |   sepal.length_mean |   sepal.length_min |   sepal.length_max |   sepal.width_mean |   sepal.width_min |   sepal.width_max |   petal.length_mean |   petal.length_min |   petal.length_max |   petal.width_mean |   petal.width_min |   petal.width_max |
 |:-----------|--------------------:|-------------------:|-------------------:|-------------------:|------------------:|------------------:|--------------------:|-------------------:|-------------------:|-------------------:|------------------:|------------------:|
@@ -15,13 +15,14 @@ En total hay **150 registros**.
 
 ---
 
-## 🔍 Hallazgos importantes  
+##  Hallazgos importantes  
 
 - La especie con mayor tamaño promedio de pétalo es **Virginica**  
 - La especie con menor tamaño promedio de pétalo es **Setosa**  
 - La especie con mayor variabilidad en pétalos es **Virginica**  
 
 ---
+
 ## Promedio de longitud de pétalos por especie
 
 ![Promedio de pétalos](Visualizaciones/petal_promedio.png)

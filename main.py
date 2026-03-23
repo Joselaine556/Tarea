@@ -29,6 +29,9 @@ resumen = df.groupby("variety").agg({
     "petal.width": ["mean", "min", "max"]
 })
 
+resumen.columns = ['_'.join(col) for col in resumen.columns]
+resumen = resumen.reset_index()
+
 print("\nResumen por especie:")
 print(resumen)
 
@@ -66,12 +69,36 @@ variabilidad = df.groupby("variety")["petal.length"].std()
 mas_variable = variabilidad.idxmax()
 
 reporte = f"""
-# Reporte de análisis del dataset Iris
+##Resumen general  
+Este análisis se basa en mediciones de flores Iris.  
+En total hay **{len(df)} registros**.
 
-## ¿Qué información útil nos dan los datos?
-Los datos permiten ver las diferencias entre las especies de flores Iris a partir de las medidas de sus pétalos y sépalos. 
-Con los gráficos y las estadísticas se puede observar que algunas especies tienen pétalos más largos o más anchos que otras. 
-Esto ayuda a comparar las especies y entender mejor sus características.
+---
+
+##  Estadísticas por especie  
+
+{resumen.to_markdown(index=False)}
+
+---
+
+##  Hallazgos importantes  
+
+- La especie con mayor tamaño promedio de pétalo es **{mayor_petalo}**  
+- La especie con menor tamaño promedio de pétalo es **{menor_petalo}**  
+- La especie con mayor variabilidad en pétalos es **{mas_variable}**  
+
+---
+
+## Información de las especies  
+
+### Setosa  
+Es la más pequeña y fácil de identificar.
+
+### Versicolor  
+Tiene tamaño intermedio y puede confundirse más.
+
+### Virginica  
+Es la más grande y destaca por sus pétalos largos.
 
 ## Promedio de longitud de pétalos por especie
 

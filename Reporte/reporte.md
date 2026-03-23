@@ -1,11 +1,27 @@
 
-# Reporte de análisis del dataset Iris
+##Resumen general  
+Este análisis se basa en mediciones de flores Iris.  
+En total hay **150 registros**.
 
-## ¿Qué información útil nos dan los datos?
-Los datos permiten ver las diferencias entre las especies de flores Iris a partir de las medidas de sus pétalos y sépalos. 
-Con los gráficos y las estadísticas se puede observar que algunas especies tienen pétalos más largos o más anchos que otras. 
-Esto ayuda a comparar las especies y entender mejor sus características.
+---
 
+## 📊 Estadísticas por especie  
+
+| variety    |   sepal.length_mean |   sepal.length_min |   sepal.length_max |   sepal.width_mean |   sepal.width_min |   sepal.width_max |   petal.length_mean |   petal.length_min |   petal.length_max |   petal.width_mean |   petal.width_min |   petal.width_max |
+|:-----------|--------------------:|-------------------:|-------------------:|-------------------:|------------------:|------------------:|--------------------:|-------------------:|-------------------:|-------------------:|------------------:|------------------:|
+| Setosa     |               5.006 |                4.3 |                5.8 |              3.428 |               2.3 |               4.4 |               1.462 |                1   |                1.9 |              0.246 |               0.1 |               0.6 |
+| Versicolor |               5.936 |                4.9 |                7   |              2.77  |               2   |               3.4 |               4.26  |                3   |                5.1 |              1.326 |               1   |               1.8 |
+| Virginica  |               6.588 |                4.9 |                7.9 |              2.974 |               2.2 |               3.8 |               5.552 |                4.5 |                6.9 |              2.026 |               1.4 |               2.5 |
+
+---
+
+## 🔍 Hallazgos importantes  
+
+- La especie con mayor tamaño promedio de pétalo es **Virginica**  
+- La especie con menor tamaño promedio de pétalo es **Setosa**  
+- La especie con mayor variabilidad en pétalos es **Virginica**  
+
+---
 ## Promedio de longitud de pétalos por especie
 
 ![Promedio de pétalos](Visualizaciones/petal_promedio.png)

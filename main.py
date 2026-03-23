@@ -29,8 +29,13 @@ resumen = df.groupby("variety").agg({
     "petal.width": ["mean", "min", "max"]
 })
 
-resumen.columns = ['_'.join(col) for col in resumen.columns]
+resumen.columns = [
+    col[0].replace(".", " ").title() + " (" + col[1].capitalize() + ")"
+    for col in resumen.columns
+]
+
 resumen = resumen.reset_index()
+resumen = resumen.round(2)
 
 print("\nResumen por especie:")
 print(resumen)
@@ -100,25 +105,22 @@ Tiene tamaño intermedio y puede confundirse más.
 ### Virginica  
 Es la más grande y destaca por sus pétalos largos.
 
-## Promedio de longitud de pétalos por especie
-
-![Promedio de pétalos](Visualizaciones/petal_promedio.png)
+### Promedio de longitud de pétalos  
+![Promedio de pétalos](../Visualizaciones/petal_promedio.png)
 
 Este gráfico muestra el promedio de la longitud de los pétalos para cada especie de flor.
 
 ---
 
-## Promedio del largo del sépalo por especie
-
-![Promedio del sépalo](Visualizaciones/sepal_promedio.png)
+### Promedio del largo del sépalo  
+![Promedio del sépalo](../Visualizaciones/sepal_promedio.png)
 
 Aquí se puede ver que el tamaño del sépalo también cambia dependiendo de la especie.
 
 ---
 
-## Relación entre largo y ancho del sépalo por especie
-
-![Relación del sépalo](Visualizaciones/sepal_scatter.png)
+### Relación entre largo y ancho del sépalo  
+![Relación del sépalo](../Visualizaciones/sepal_scatter.png)
 
 En este gráfico se observa la relación entre el largo y el ancho del sépalo. Los puntos están coloreados por especie, lo que permite ver cómo se agrupan las flores.
 

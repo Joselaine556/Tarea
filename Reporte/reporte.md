@@ -1,11 +1,15 @@
 
 ##Resumen general  
-Este análisis se basa en mediciones de flores Iris.  
+En este análisis trabajé con el dataset Iris, que contiene información sobre distintas flores.  
+El objetivo fue observar cómo cambian las medidas de los pétalos y los sépalos dependiendo de la especie, y ver si se pueden diferenciar fácilmente.
 En total hay **150 registros**.
 
 ---
 
-##  Estadísticas por especie  
+## Promedios por especie
+
+Esta tabla muestra el tamaño promedio de los pétalos y sépalos en cada especie.
+
 
 | variety    |   sepal.length |   sepal.width |   petal.length |   petal.width |
 |:-----------|---------------:|--------------:|---------------:|--------------:|

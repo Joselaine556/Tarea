@@ -81,7 +81,10 @@ En total hay **{len(df)} registros**.
 
 ---
 
-##  Estadísticas por especie  
+## Promedios por especie
+
+Esta tabla muestra el tamaño promedio de los pétalos y sépalos en cada especie.
+
 
 {promedios.to_markdown()}
 
@@ -89,9 +92,15 @@ En total hay **{len(df)} registros**.
 
 ##  Hallazgos importantes  
 
+Después de observar la tabla se puede notar varias diferencias entre las especies.
+
 - La especie con mayor tamaño promedio de pétalo es **{mayor_petalo}**  
 - La especie con menor tamaño promedio de pétalo es **{menor_petalo}**  
 - La especie con mayor variabilidad en pétalos es **{mas_variable}**  
+
+En general, el tamaño del pétalo es una de las variables que más ayuda a diferenciar las especies.  
+También se puede notar que algunas especies son muy fáciles de distinguir, mientras que otras son más parecidas entre sí.
+
 
 ---
 

@@ -5,10 +5,8 @@ import seaborn as sns
 import os
 
 # Para abrir el archivo JSON
-f = open("data/iris.json")
-data = json.load(f)
-f.close()
-
+with open("data/iris.json") as f:
+    data = json.load(f)
 df = pd.DataFrame(data)
 
 #Resumen del dataset
@@ -18,10 +16,14 @@ print("\nVariables existentes:")
 
 
 print(df.head())
+tabla_estadistica = df[[
+    "sepal.length",
+    "sepal.width",
+    "petal.length",
+    "petal.width"
+]].agg(["mean", "min", "max"]).round(2)
 
-print("\nResumen estadistico del dataset:")
-print(df.describe())
-
+# Resumen por especie
 resumen = df.groupby("variety").agg({
     "sepal.length": ["mean", "min", "max"],
     "sepal.width": ["mean", "min", "max"],
@@ -41,6 +43,8 @@ print("\nResumen por especie:")
 print(resumen)
 
 promedios = df.groupby("variety").mean().round(2)
+
+
 
 plt.figure()
 plt.bar(promedios.index, promedios["petal.length"])
@@ -72,6 +76,7 @@ menor_petalo = promedios["petal.length"].idxmin()
 
 variabilidad = df.groupby("variety")["petal.length"].std()
 mas_variable = variabilidad.idxmax()
+mayor_sepal = promedios["sepal.length"].idxmax()
 
 reporte = f"""
 ## Resumen general  
@@ -83,13 +88,19 @@ En total hay **{len(df)} registros**.
 
 ---
 
-## Promedios por especie
+## Estadísticas generales
 
-Esta tabla muestra el tamaño promedio de los pétalos y sépalos en cada especie.
+{tabla_estadistica.to_markdown()}
 
+Esta tabla muestra un resumen general de las medidas del dataset, permitiendo ver los valores promedio, mínimos y máximos.
 
-{promedios.to_markdown()}
+---
 
+## Resumen por especie
+
+{resumen.to_markdown(index=False)}
+
+Esta tabla permite comparar las características de cada especie, mostrando cómo cambian las medidas de pétalos y sépalos.
 ---
 
 ##  Hallazgos importantes  
@@ -99,6 +110,7 @@ Después de observar la tabla se puede notar varias diferencias entre las especi
 - La especie con mayor tamaño promedio de pétalo es **{mayor_petalo}**  
 - La especie con menor tamaño promedio de pétalo es **{menor_petalo}**  
 - La especie con mayor variabilidad en pétalos es **{mas_variable}**  
+- La especie con mayor tamaño de sépalo es **{mayor_sepal}**   
 
 En general, el tamaño del pétalo es una de las variables que más ayuda a diferenciar las especies.  
 También se puede notar que algunas especies son muy fáciles de distinguir, mientras que otras son más parecidas entre sí.

@@ -101,6 +101,7 @@ Esta tabla muestra un resumen general de las medidas del dataset, permitiendo ve
 {resumen.to_markdown(index=False)}
 
 Esta tabla permite comparar las características de cada especie, mostrando cómo cambian las medidas de pétalos y sépalos.
+
 ---
 
 ##  Hallazgos importantes  

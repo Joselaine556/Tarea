@@ -1,5 +1,5 @@
 
-## Resumen general  
+##Resumen general  
 Este análisis se basa en mediciones de flores Iris.  
 En total hay **150 registros**.
 
@@ -7,11 +7,11 @@ En total hay **150 registros**.
 
 ##  Estadísticas por especie  
 
-| variety    |   Sepal Length (Mean) |   Sepal Length (Min) |   Sepal Length (Max) |   Sepal Width (Mean) |   Sepal Width (Min) |   Sepal Width (Max) |   Petal Length (Mean) |   Petal Length (Min) |   Petal Length (Max) |   Petal Width (Mean) |   Petal Width (Min) |   Petal Width (Max) |
-|:-----------|----------------------:|---------------------:|---------------------:|---------------------:|--------------------:|--------------------:|----------------------:|---------------------:|---------------------:|---------------------:|--------------------:|--------------------:|
-| Setosa     |                  5.01 |                  4.3 |                  5.8 |                 3.43 |                 2.3 |                 4.4 |                  1.46 |                  1   |                  1.9 |                 0.25 |                 0.1 |                 0.6 |
-| Versicolor |                  5.94 |                  4.9 |                  7   |                 2.77 |                 2   |                 3.4 |                  4.26 |                  3   |                  5.1 |                 1.33 |                 1   |                 1.8 |
-| Virginica  |                  6.59 |                  4.9 |                  7.9 |                 2.97 |                 2.2 |                 3.8 |                  5.55 |                  4.5 |                  6.9 |                 2.03 |                 1.4 |                 2.5 |
+| variety    |   sepal.length |   sepal.width |   petal.length |   petal.width |
+|:-----------|---------------:|--------------:|---------------:|--------------:|
+| Setosa     |           5.01 |          3.43 |           1.46 |          0.25 |
+| Versicolor |           5.94 |          2.77 |           4.26 |          1.33 |
+| Virginica  |           6.59 |          2.97 |           5.55 |          2.03 |
 
 ---
 

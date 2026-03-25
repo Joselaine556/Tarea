@@ -40,7 +40,7 @@ resumen = resumen.round(2)
 print("\nResumen por especie:")
 print(resumen)
 
-promedios = df.groupby("variety").mean()
+promedios = df.groupby("variety").mean().round(2)
 
 plt.figure()
 plt.bar(promedios.index, promedios["petal.length"])
@@ -75,14 +75,15 @@ mas_variable = variabilidad.idxmax()
 
 reporte = f"""
 ##Resumen general  
-Este análisis se basa en mediciones de flores Iris.  
+En este análisis trabajé con el dataset Iris, que contiene información sobre distintas flores.  
+El objetivo fue observar cómo cambian las medidas de los pétalos y los sépalos dependiendo de la especie, y ver si se pueden diferenciar fácilmente.
 En total hay **{len(df)} registros**.
 
 ---
 
 ##  Estadísticas por especie  
 
-{resumen.to_markdown(index=False)}
+{promedios.to_markdown()}
 
 ---
 

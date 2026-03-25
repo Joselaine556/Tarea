@@ -29,6 +29,7 @@ Esta tabla muestra un resumen general de las medidas del dataset, permitiendo ve
 | Virginica  |                  6.59 |                  4.9 |                  7.9 |                 2.97 |                 2.2 |                 3.8 |                  5.55 |                  4.5 |                  6.9 |                 2.03 |                 1.4 |                 2.5 |
 
 Esta tabla permite comparar las características de cada especie, mostrando cómo cambian las medidas de pétalos y sépalos.
+
 ---
 
 ##  Hallazgos importantes  

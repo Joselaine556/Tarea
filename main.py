@@ -74,8 +74,10 @@ variabilidad = df.groupby("variety")["petal.length"].std()
 mas_variable = variabilidad.idxmax()
 
 reporte = f"""
-##Resumen general  
+## Resumen general  
+
 En este análisis trabajé con el dataset Iris, que contiene información sobre distintas flores.  
+
 El objetivo fue observar cómo cambian las medidas de los pétalos y los sépalos dependiendo de la especie, y ver si se pueden diferenciar fácilmente.
 En total hay **{len(df)} registros**.
 
@@ -136,8 +138,11 @@ En este gráfico se observa la relación entre el largo y el ancho del sépalo. 
 
 
 ## Conclusión
-En general, se pueden notar diferencias entre las especies de Iris en el tamaño de sus pétalos y sépalos. 
-Estas medidas ayudan a distinguir cada tipo de flor.
+Después de analizar los datos, pude notar que sí hay diferencias claras entre las especies del dataset Iris.
+
+La especie **{menor_petalo}** es la que tiene los pétalos más pequeños, por lo que se hace más fácil de identificar.  
+Por otro lado, **{mayor_petalo}** es la que tiene los pétalos más grandes.  
+La otra especie queda como en un punto intermedio, ya que no es ni tan pequeña ni tan grande como las demás.
 """
 with open("Reporte/reporte.md", "w", encoding="utf-8") as f:
     f.write(reporte)
